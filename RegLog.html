@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="RegLog.css">
+    <title>Login/Register</title>
+</head>
+<body>
+    <div class="forms-container">
+        <!-- Login form (visible by default) -->
+        <div id="login-form" class="form-container">
+            <p class="title">Login</p>
+            <form class="form" id="loginForm">
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" name="email" id="login-email" placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" name="password" id="login-password" placeholder="Enter your password">
+                    <div class="forgot">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="sign-btn">
+                    <button type="submit" class="sign">Sign in</button>
+                </div> 
+            </form> 
+            <div class="social-message">
+                <div class="line"></div>
+            </div>
+            <div class="signup">Don't have an account?
+                <a href="#" id="show-register">Register</a>
+            </div>
+        </div>  
+
+        <!-- Registration form (hidden by default) -->
+        <div id="register-form" class="form-container hidden">
+            <p class="title">Register</p>
+            <form id="registerForm" class="form">
+                <div class="input-group">
+                    <label for="register-username">Username</label>
+                    <input type="text" name="username" id="register-username" placeholder="Choose a username">
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" name="email" id="register-email" placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" name="password" id="register-password" placeholder="Create a password">
+                </div>
+                <div class="input-group">
+                    <label for="register-confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="register-confirm-password" placeholder="Confirm your password">
+                </div>      
+                <div class="sign-btn">
+                    <button type="submit" class="sign">Sign up</button>
+                </div>   
+            </form>
+            <div class="social-message">
+                <div class="line"></div>
+            </div>
+            <div class="signup">Already have an account?
+                <a href="#" id="show-login">Login</a>
+            </div>
+        </div>        
+    </div>
+
+    <script src="RegLog.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+:root {
+  --orange-soda: hsl(9, 100%, 62%);
+  --cultured-1: hsl(0, 0%, 93%);
+  --cultured-2: hsl(192, 24%, 96%);
+  --misty-rose: hsl(7, 56%, 91%);
+  --alice-blue: hsl(210, 100%, 97%);
+  --seashell: hsl(8, 100%, 97%);
+  --cadet: hsl(200, 15%, 43%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--cultured-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: black;
+}
+
+.forms-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: var(--seashell);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: var(--alice-blue);
+  color: black;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--orange-soda);
+}
+
+.forgot {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.forgot a {
+  color: black;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+.sign-btn {
+  margin-top: 1.5rem;
+}
+
+.sign-btn .sign {
+  background-color: var(--orange-soda);
+  color: white;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sign-btn .sign:hover {
+  background-color: hsl(9, 100%, 55%);
+  transform: scale(1.02);
+}
+
+.signup {
+  text-align: center;
+  color: black;
+  margin-top: 1.5rem;
+}
+
+.signup a {
+  color: var(--orange-soda);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.social-message {
+  margin: 1.5rem 0;
+}
+
+.social-message .line {
+  height: 1px;
+  background-color: var(--cultured-1);
+}
